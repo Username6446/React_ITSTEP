@@ -1,0 +1,11 @@
+# Node modules (важкі бібліотеки)
+node_modules/
+
+# Збірки проектів
+build/
+dist/
+
+# Системні файли та логи
+.DS_Store
+*.log
+.env

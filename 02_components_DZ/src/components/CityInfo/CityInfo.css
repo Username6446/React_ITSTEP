@@ -1,0 +1,22 @@
+.city-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.landmarks-list {
+  display: flex;
+  gap: 15px;
+}
+
+.landmark-item {
+  text-align: center;
+}
+
+.landmark-image {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
