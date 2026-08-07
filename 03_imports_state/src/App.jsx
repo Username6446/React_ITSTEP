@@ -1,5 +1,5 @@
-import Footer from "./components/footer/Footer";
-import Navbar from "./components/navbar/Navbar";
+import Footer from "../../03_imports_state_DZ/src/components/footer/Footer";
+import Navbar from "../../03_imports_state_DZ/src/components/navbar/Navbar";
 import Counter from "./components/counter/Counter";
 
 // import для export default

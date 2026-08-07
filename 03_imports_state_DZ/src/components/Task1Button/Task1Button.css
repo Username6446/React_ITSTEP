@@ -1,0 +1,15 @@
+.task-container {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.task1-btn {
+    font-size: 1.5em;
+    padding: 10px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}

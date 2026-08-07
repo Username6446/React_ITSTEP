@@ -22,7 +22,7 @@ function Counter() {
 
     function increment() {
         // set може приймати функцію куди перелає попереднє значення
-        setCount((prev) => prev + 1);
+        // setCount((prev) => prev + 1);
         setCount((prev) => prev + 1);
     }
 
