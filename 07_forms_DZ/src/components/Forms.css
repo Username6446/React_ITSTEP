@@ -1,0 +1,19 @@
+.custom-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 10px;
+}
+
+.custom-form input,
+.custom-form select,
+.submit-btn {
+  padding: 5px;
+}
+
+.contact-card {
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 10px;
+  width: 300px;
+}
