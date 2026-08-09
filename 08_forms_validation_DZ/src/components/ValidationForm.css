@@ -1,0 +1,35 @@
+.minimal-form {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid black;
+  gap: 8px;
+}
+
+.minimal-form h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.minimal-form input,
+.minimal-form textarea,
+.minimal-form button {
+  padding: 8px;
+  font-family: inherit;
+}
+
+.minimal-form button {
+  margin-top: 15px;
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: #eee;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
