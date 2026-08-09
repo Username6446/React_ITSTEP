@@ -7,3 +7,6 @@ npm i
 npm audit fix
 
 npm run dev
+
+
+npm install prop-types

@@ -1,122 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import Article from "./components/Article";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+    return (
+        <div className="app-container" style={{ maxWidth: "900px", margin: "0 auto", padding: "20px" }}>
+            
+            <h2>Стаття 1: Картинка зліва, заголовок по центру</h2>
+            <Article 
+                title="Основи React для початківців"
+                author="Іван Сергійович"
+                date="09.08.2026"
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvx9izwQlMz1mBVLyLbFvDLPfSAzCsRXwogsIJ_-ITci_-6Jq9069El2-AZWbDPamdN0YXQCDP78jB71htZ7IyjQ98kwJsawcvXhSGPw&s=10"
+                
+                fontStyles={{ fontFamily: "Arial, sans-serif", fontSize: "18px", color: "#333" }}
+                bgColors={{ containerBg: "#fff", headerBg: "#e3f2fd", contentBg: "#fafafa" }}
+                layout={{ imagePosition: "left", titleAlign: "center" }}
+            />
 
-  return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+            <h2>Стаття 2: Картинка справа, темна тема, заголовок зліва</h2>
+            <Article 
+                title="Темна тема — це зручно!"
+                author="UI/UX Дизайнер"
+                date="10.08.2026"
+                text="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus, nec gravida orci commodo vel. Phasellus hendrerit libero vitae diam viverra, nec magna convallis sodales."
+                imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBj0m1wajVSVYdMAq36XcDCyl-ioKTkW-GqG2V2ZiDTNdhzzh1YcOAwolH&s=10"
+                
+                fontStyles={{ fontFamily: "Verdana, sans-serif", fontSize: "16px", color: "#ecf0f1" }}
+                bgColors={{ containerBg: "#2c3e50", headerBg: "#34495e", contentBg: "#2c3e50" }}
+                layout={{ imagePosition: "right", titleAlign: "left" }}
+            />
 
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
         </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+    );
 }
 
-export default App
+export default App;
